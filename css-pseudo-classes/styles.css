@@ -8,6 +8,6 @@ th {
   color: white;
 }
 
-tr:nth-child(odd) {
+tbody > tr:nth-child(odd) {
   background-color: lightgray;
 }
