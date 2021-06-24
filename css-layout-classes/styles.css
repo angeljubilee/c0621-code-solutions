@@ -39,6 +39,10 @@ p {
   flex-basis: calc(100% * 2 / 3);
 }
 
+.column-one-fourth {
+  flex-basis: 25%;
+}
+
 img {
   width: 100%;
 }
