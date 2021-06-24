@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+p {
+  font-weight: 500;
+  font-size: medium;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  display: flex;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
+.column-two-thirds {
+  flex-basis: calc(100% * 2 / 3);
+}
+
+img {
+  width: 100%;
+}
