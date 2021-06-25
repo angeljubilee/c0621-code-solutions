@@ -13,6 +13,5 @@ body {
   /* your code here */
   position: fixed;
   top: 80px;
-  left: 500px;
-  width: 250px;
+  width: 100%;
 }
