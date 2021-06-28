@@ -1,0 +1,56 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  background-color: rgba(25, 150, 218, 255);
+  padding: 4rem 12rem;
+}
+
+.row {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.column-third {
+  flex-basis: calc(100% / 3);
+}
+
+.main-header h1 {
+  width: 100%;
+  color: #ffff;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.bulletpoint {
+  margin: auto;
+  width: 80%;
+}
+
+.bullet-img {
+  background-color: #ffff;
+  border-radius: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.bullet-img img {
+  width: 100%;
+  padding: 22px;
+}
+
+.bulletpoint h3 {
+  color: #ffff;
+  text-align: center;
+  font-weight: 200;
+}
+
+.bulletpoint p {
+  color: #dddd;
+  text-align: center;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
