@@ -33,13 +33,6 @@ nav > a {
   padding-right: 3rem;
 }
 
-.box {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 4rem;
-  text-align: center;
-}
-
 .row {
   display: flex;
   width: 100%;
@@ -103,7 +96,7 @@ nav > a {
   font-size: large;
 }
 
-.black-box {
+.black-background {
   background-color: rgba(80, 81, 79, 255);
   color: #50514f;
 }
@@ -196,7 +189,7 @@ nav > a {
   padding-left: 2rem;
 }
 
-.gray-box {
+.gray-background {
   background-color: #fbfbfb;
 }
 
@@ -204,26 +197,37 @@ nav > a {
   float: right;
 }
 
-.hero-block {
+.main-block {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/hero.jpg");
   background-size: cover;
-  margin-left: 3rem;
-  margin-right: 3rem;
   margin-top: 3rem;
 }
 
-.hero-info {
+.main-info {
   padding: 4rem 22rem 4rem 4rem;
 }
 
-.hero-info h1 {
+.main-info h1 {
   font-family: 'Tiempos Headline', serif;
   font-weight: 500;
 }
 
-.hero-info > p {
+.main-info > p {
   color: white;
   line-height: 1.5rem;
   margin-bottom: 2rem;
+}
+
+.locations-header {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.locations-header > p {
+  font-size: 0.8rem;
+}
+
+.locations {
+  margin-bottom: 5rem;
 }
