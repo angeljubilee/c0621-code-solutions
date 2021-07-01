@@ -1,0 +1,42 @@
+h1,
+h2,
+h4,
+p {
+  font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h4 {
+  font-weight: 900;
+}
+
+p {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.container {
+  margin: 1rem 3rem;
+}
+
+.row {
+  display: flex;
+}
+
+.column-quarter {
+  flex-basis: 25%;
+}
+
+.center {
+  text-align: center;
+}
+
+.feature > img {
+  width: 100%;
+}
+
+.feature > img:nth-child(2) {
+  width: 25%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
