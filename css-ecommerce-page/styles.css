@@ -1,3 +1,7 @@
+body {
+  text-align: center;
+}
+
 h1,
 h4,
 p {
@@ -24,6 +28,18 @@ img {
   align-items: flex-end;
 }
 
-.center {
-  text-align: center;
+.align-center {
+  align-items: center;
+}
+
+.margin-left-1 {
+  margin-left: 1rem;
+}
+
+.color-gray {
+  color: #d6d6d6;
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
