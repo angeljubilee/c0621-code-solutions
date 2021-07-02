@@ -1,15 +1,15 @@
 body {
   text-align: center;
-}
-
-h1,
-h4,
-p {
   font-family: 'DM Sans', sans-serif;
 }
 
 img {
   width: 90%;
+}
+
+p {
+  font-size: 0.6rem;
+  margin-bottom: 0;
 }
 
 .container {
@@ -33,7 +33,7 @@ img {
 }
 
 .margin-left-1 {
-  margin-left: 1rem;
+  margin-left: 0.6rem;
 }
 
 .color-gray {
@@ -42,4 +42,12 @@ img {
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.peach-shadow {
+  text-shadow: 1px 1px 2px pink;
 }
