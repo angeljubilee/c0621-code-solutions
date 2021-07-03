@@ -1,4 +1,19 @@
 /* exported chunk */
+/*
+  array results
+  array result
+  count
+
+  for item in array
+    add item to result
+    increment count
+    if count eq size
+      push result onto results
+      clear result
+      reset count
+  check result for leftover items
+  if so, push result onto results
+*/
 function chunk(array, size) {
   if (size > array.length) {
     return array;
