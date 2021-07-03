@@ -1,4 +1,9 @@
 /* exported drop */
+
+/*  results []
+    for item in array from index count to end
+      add item to results
+*/
 function drop(array, count) {
   if (count > array.length) {
     return array;

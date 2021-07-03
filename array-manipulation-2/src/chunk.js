@@ -14,6 +14,7 @@
   check result for leftover items
   if so, push result onto results
 */
+
 function chunk(array, size) {
   if (size > array.length) {
     return array;
