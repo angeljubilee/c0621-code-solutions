@@ -10,7 +10,9 @@ function handleKey(event) {
     event.key === ' ')) {
     $spanList[current].className = 'span green';
     current++;
-    $spanList[current].className += 'underline';
+    if (current < $spanList.length) {
+      $spanList[current].className += 'underline';
+    }
   } else {
     $spanList[current].className = 'span red underline';
   }
