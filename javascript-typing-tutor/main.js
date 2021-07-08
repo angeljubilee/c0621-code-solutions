@@ -5,9 +5,7 @@ $spanList[current].className += 'underline';
 document.addEventListener('keypress', handleKey);
 
 function handleKey(event) {
-  if ($spanList[current].textContent === event.key ||
-    ($spanList[current].textContent === String.fromCharCode(160) &&
-    event.key === ' ')) {
+  if ($spanList[current].textContent === event.key) {
     $spanList[current].className = 'span green';
     current++;
     if (current < $spanList.length) {
