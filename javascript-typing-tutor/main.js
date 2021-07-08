@@ -8,6 +8,7 @@ function handleKey(event) {
   if ($spanList[current].textContent === event.key) {
     $spanList[current].className = 'span green';
     current++;
+
     if (current < $spanList.length) {
       $spanList[current].className += 'underline';
     }
