@@ -6,7 +6,7 @@
 */
 function drop(array, count) {
   if (count > array.length) {
-    return array;
+    return [];
   }
   var results = [];
   for (var i = count; i < array.length; i++) {
