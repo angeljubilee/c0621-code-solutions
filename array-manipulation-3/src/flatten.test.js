@@ -1,8 +1,5 @@
 /* global expect, banMethods, deepFreeze, flatten */
 
-/* deepFreeze not defined, added this line */
-// const deepFreeze = require('deep-freeze');
-
 describe('flatten(array)', function () {
 
   beforeEach(function () {
