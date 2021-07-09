@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+  display: flex;
+}
+
+.flex-center {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+button.openModal {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+  border-style: none;
+  box-shadow: 1px 2px darkgray;
+}
+
+.modal {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 1rem;
+}
+
+.modal > button {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 0 2px darkgray;
+  padding: 0.4rem 1rem;
+}
+
+.gray-background {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,36 @@
+.flex-center {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox {
+  background-color: black;
+  width: 100vw;
+  height: 600px;
+}
+
+.lightbulb {
+  border-radius: 50%;
+  width: 15%;
+  height: 0;
+  padding-bottom: 15%;
+}
+
+.off {
+  background-color: black;
+}
+
+.off > .lightbulb {
+  background-color: rgb(70, 68, 68);
+}
+
+.on {
+  background-color: white;
+}
+
+.on > .lightbulb {
+  background-color: yellow;
+  box-shadow: 0 0  10px 10px rgba(255, 255, 0, 0.8);
+}
