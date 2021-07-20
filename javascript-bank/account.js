@@ -25,12 +25,10 @@ Account.prototype.withdraw = function (amount) {
 };
 
 Account.prototype.getBalance = function () {
-
   return this.transactions.reduce((acc, curr) => {
     if (curr.type === 'deposit') {
       return acc + curr.amount;
-    } else {
-      return acc - curr.amount;
     }
+    return acc - curr.amount;
   }, 0);
 };
