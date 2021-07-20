@@ -5,8 +5,7 @@ function Bank() {
 }
 
 Bank.prototype.openAccount = function (holder, balance) {
-  if (!balance || typeof balance !== 'number' || balance <= 0 ||
-    ((balance * 10) % 10) > 0) {
+  if (!balance || !Number.isInteger(balance) || balance <= 0) {
     return null;
   }
   var newAccount = new Account(this.nextAccountNumber, holder);
