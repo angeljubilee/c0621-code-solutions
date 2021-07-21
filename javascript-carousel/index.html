@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row space-between align-items">
+      <div class="column-third">
+        <h1><i class="fas fa-chevron-left"></i></h1>
+      </div>
+      <div class="pokemon column-fourth">
+        <img src="images/001.png">
+        <img class="hidden" src="images/004.png">
+        <img class="hidden" src="images/007.png">
+        <img class="hidden" src="images/025.png">
+        <img class="hidden" src="images//039.png">
+      </div>
+      <div class="column-third right">
+          <h1><i class="fas fa-chevron-right"></i></h1>
+      </div>
+    </div>
+    <div class="row flex-center">
+      <div class="column-quarter">
+        <ul class="row">
+          <li>
+            <i class="fas fa-circle" data-view="1"></i>
+            <i class="far fa-circle hidden" data-view="1"></i>
+          </li>
+          <li>
+            <i class="fas fa-circle hidden" data-view="2"></i>
+            <i class="far fa-circle" data-view="2"></i>
+          </li>
+          <li>
+            <i class="fas fa-circle hidden" data-view="3"></i>
+            <i class="far fa-circle" data-view="3"></i>
+          </li>
+          <li>
+            <i class="fas fa-circle hidden" data-view="4"></i>
+            <i class="far fa-circle" data-view="4"></i>
+          </li>
+          <li>
+            <i class="fas fa-circle hidden" data-view="5"></i>
+            <i class="far fa-circle" data-view="5"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
