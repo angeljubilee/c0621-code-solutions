@@ -1,0 +1,639 @@
+    1  ls -lah
+    2  ls -lah .ssh
+    3  id
+    4  ls -lah
+    5  ls -lah repos/code-journal/
+    6  chown -R dev:dev .ssh
+    7  sudo chown -R dev:dev .ssh
+    8  ls -lah
+    9  ls -lah .ssh
+   10  ls -lah
+   11  ls -lah .ssh/
+   12  ls -lah .ssh
+   13  cd repos/code-journal/
+   14  git remote -v
+   15  git fetch
+   16  cd repos/code-journal/
+   17  git fetch 
+   18  pwd
+   19  ls
+   20  cd repos/
+   21  ls
+   22  cd driving-game/
+   23  ls
+   24  git pull origin master
+   25  git config --global user.email angeljubilee@gmail.com
+   26  git conifg --global user.name "Angel Lee"
+   27  git config --global user.name "Angel Lee"
+   28  git pull origin master
+   29  git status
+   30  git switch master
+   31  git pull origin master
+   32  git status
+   33  ls -la
+   34  cd repos
+   35  ls -la
+   36  cd c0621-code-solutions/
+   37  ls -la
+   38  exit
+   39  pwd
+   40  ls
+   41  cd repos/
+   42  ls
+   43  cd ..
+   44  ls
+   45  cd repos
+   46  ls
+   47  cd ../..
+   48  ls
+   49  cd dev
+   50  ls
+   51  cd repos
+   52  ls
+   53  cd ../..
+   54  ls
+   55  cd ..
+   56  ls
+   57  cd 
+   58  ls
+   59  pd
+   60  pwd
+   61  find / -type d -name "http-messages"
+   62  ls -la
+   63  cd repos/
+   64  ls
+   65  cd c0621-code-solutions/
+   66  git status
+   67  pwd
+   68  git switch master
+   69  git pull origin master
+   70  git status
+   71  ls -la
+   72  ls -la http*
+   73  cd http-messages/
+   74  ls
+   75  cd ..
+   76  sudo chown http-messages
+   77  sudo chown name http-messages
+   78  sudo chown dev http-messages
+   79  ls
+   80  ls -la
+   81  cd http-messages/
+   82  ls -la
+   83  https httpie.io/hello
+   84  http httpie./io/hello
+   85  http https://example.com
+   86  http --verbose http://www.example.com
+   87  http --body GET https://example.com > index.html
+   88  vi index.html
+   89  cat index.html
+   90  vim index.html
+   91  ls
+   92  ls -la
+   93  chmod 777 index.html 
+   94  ls -la
+   95  chmod 771 index.html 
+   96  ls -la
+   97  chmod 777 index.html 
+   98  ls -la
+   99  git status
+  100  cd ..
+  101  gi status
+  102  git status
+  103  git add http-messages/
+  104  cd http-messages/
+  105  ls -la
+  106  ls -la http*
+  107  ls -la
+  108  cd ..
+  109  ls -la
+  110  chown -hR dev http-messages/
+  111  sudo chown -hR dev http-messages/
+  112  cd http-messages/
+  113  ls
+  114  ls -la
+  115  git status
+  116  cd ..
+  117  git status
+  118  git add http-messages/
+  119  git status
+  120  git restore http-messages/
+  121  git status
+  122  git restore --staged http-messages/
+  123  git status
+  124  git branch http-messages
+  125  git switch http-messages
+  126  git add http-messages/
+  127  git status
+  128  git commit -m "Completed http-messages"
+  129  git push origin http-messages 
+  130  cd
+  131  ls
+  132  cd repos/
+  133  ls
+  134  cd code-journal/
+  135  cd ..
+  136  cd c0621-code-solutions/
+  137  git fetch
+  138  git status
+  139  git pull origin master
+  140  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+  141  git status
+  142  git add users.json 
+  143  git status
+  144  git commit -m "Added json file"
+  145  git push origin http-messages 
+  146  whoami
+  147  ls -la
+  148  ls
+  149  cd http-messages/
+  150  ls -la
+  151  chmod 776 index.html 
+  152  ls -la
+  153  chmod 775 index.html 
+  154  ls -la
+  155  cd ../..
+  156  cd ..
+  157  ls
+  158  cd ..
+  159  ls
+  160  cd ..
+  161  ls
+  162  cd
+  163  pwd
+  164  cd repos/
+  165  ls
+  166  cd c0621-code-solutions/
+  167  ls
+  168  whoami
+  169  chown -hR dev javascript-timers/
+  170  cd javascript-timers/
+  171  ls
+  172  ls -la
+  173  chmod 777 *
+  174  ls -la
+  175  cd ..
+  176  ls
+  177  cp users.json http-messages/
+  178  git status
+  179  git add http-messages/
+  180  git status
+  181  git commit -m "Moved json file to http-messages"
+  182  git push origin http-messages 
+  183  cd ..
+  184  cd c0621-code-solutions/
+  185  git switch master
+  186  cd ../..
+  187  ls -la ~/repos/
+  188  cd repos/c0621-code-solutions/
+  189  ls -lah
+  190  cd ..
+  191  ls -lah
+  192  exit
+  193  ls -lah
+  194  cd repos
+  195  ls -lah
+  196  cat /etc/passwd
+  197  cat /etc/passwd | less
+  198  exit
+  199  ls -lah
+  200  id
+  201  cat /etc/passwd
+  202  id
+  203  exit
+  204  ls -lah
+  205  cat /etc/passwd
+  206  gentent group dev
+  207  id
+  208  exit
+  209  ls -lah
+  210  sudo chown -R dev:dev /home/dev
+  211  ls -lah
+  212  cd repos
+  213  ls -lah
+  214  ls -lah repos
+  215  ls -lah
+  216  cd repos
+  217  ls -lah
+  218  cd c0621-code-solutions/
+  219  uid
+  220  id
+  221  git status
+  222  git restore javascript-timers
+  223  git status
+  224  git pull origin master
+  225  git status
+  226  git branch javascript-ajax
+  227  git switch javascript-ajax 
+  228  git add javascript-ajax/
+  229  git status
+  230  git commit -m "Completed javascript-ajax"
+  231  git push origin javascript-ajax 
+  232  git status
+  233  git switch master
+  234  git pull origin master
+  235  http https://example.com
+  236  git status
+  237  cd practice/
+  238  ls
+  239  history
+  240  xit
+  241  exit
+  242  pwd
+  243  cd repos/
+  244  ls
+  245  cd c0621-code-solutions/
+  246  ls
+  247  cd javascript-ajax/
+  248  ls
+  249  vi users.js 
+  250  npm install dotenv
+  251  ls
+  252  cd ../practice/
+  253  node index.js 
+  254  git status
+  255  cd ..
+  256  git status
+  257  pwd
+  258  cd ..
+  259  git clone git@github.com:Learning-Fuze/ajax-project-instructions.git
+  260  ls
+  261  rm -rf ajax-project-instructions/
+  262  git clone git@github.com:angeljubilee/pokeDojo.git
+  263  ls
+  264  cd pokeDojo/
+  265  ls
+  266  npm install dotenv
+  267  pwd
+  268  git status
+  269  rm POKE.env 
+  270  git status
+  271  git branch user-select
+  272  git switch user-select
+  273  git status
+  274  git add css/styles.css 
+  275  git add index.html 
+  276  git add js/main.js 
+  277  git add images/snorlax.png 
+  278  git status
+  279  git commit -m "Screen displays logos from api call"
+  280  git add js/main.js 
+  281  git commit -m "Screen displays logos from api call"
+  282  git add js/main.js 
+  283  git commit -m "Screen displays logos from api call"
+  284  git push origin user-select 
+  285  git status
+  286  git push origin user-select 
+  287  exit
+  288  git status
+  289  pwd
+  290  cd repos/
+  291  ls
+  292  cd pokeDojo/
+  293  git status
+  294  git push origin user-select 
+  295  ping github.com
+  296  git push origin user-select 
+  297  ping github.com
+  298  ping google.com
+  299  http google.com
+  300  ping github.com
+  301  git status
+  302  git add css/styles.css 
+  303  git ad index.html
+  304  git add index.html 
+  305  git add js/main.js 
+  306  git status
+  307  git restore package.json
+  308  git status
+  309  git restore package-lock.json
+  310  git status
+  311  git commit -m "Updated styling for responsive laout.  Added code to check user input for set names"
+  312  git add js/main.js 
+  313  git commit -m "Updated styling for responsive laout.  Added code to check user input for set names"
+  314  git status
+  315  git push origin user-select
+  316  git status
+  317  git add css/styles.css 
+  318  git commit -m "Updated styling for responsive laout.  Added code to check user input for set names"
+  319  git push origin user-select
+  320  git switch master
+  321  git status
+  322  git add css/styles.css 
+  323  git commit -m "Updated css"
+  324  git push origin user-select
+  325  git switch master
+  326  git status
+  327  pwd
+  328  git pull origin master
+  329  git status
+  330  git add js/
+  331  git commit -m "Added code to fetch cards from api and display them"
+  332  git status
+  333  git add css/
+  334  git commit -m "Added code to fetch cards from api and display them"
+  335  git push origin user-sees-cards
+  336  git status
+  337  git add css/
+  338  git commit -m "Fixed styling"
+  339  git push origin user-sees-cards
+  340  git switch master
+  341  git pull origin master
+  342  ls
+  343  git status
+  344  pwd
+  345  ls
+  346  git pull origin master
+  347  git status
+  348  git restore css/styles.css
+  349  git restore index.html
+  350  git add css/
+  351  git add index.html 
+  352  git add js/
+  353  git satus
+  354  git status
+  355  git add images/SM05_hires.png 
+  356  git status
+  357  rm temp
+  358  git status
+  359  git commit -m "Added code to show card and add functionality"
+  360  git reset --soft HEAD~1
+  361  git restore --stanged css/
+  362  git status
+  363  git restore --staged css/styles.css
+  364  git restore --staged images/SM05_hires.png
+  365  git restore --staged index.html
+  366  git restore --staged js/cards.js
+  367  git restore --staged js/data.js
+  368  git restore --staged js/main.js
+  369  git status
+  370  git branch user-add-card
+  371  git switch user-add-card
+  372  git add css/
+  373  git add index.html 
+  374  git add js/
+  375  git status
+  376  git add images/
+  377  git status
+  378  git commit -m "Added code to show card and add it"
+  379  git push origin user-add-card 
+  380  git status
+  381  git add css/styles.css 
+  382  git add index.html 
+  383  git add js/cards.js 
+  384  git add js/
+  385  git status
+  386  git commit -m "Added my deck info to Series Logo"
+  387  git add js/
+  388  git status
+  389  git commit -m "Added my deck info to Series Logo"
+  390  git push origin user-add-card 
+  391  git status
+  392  git switch master
+  393  git status
+  394  git pull origin master
+  395  git branch user-view-myDeck
+  396  git switch user-view-myDeck
+  397  git status
+  398  git add css/styles.css 
+  399  git add index.html 
+  400  git add js/
+  401  git status
+  402  git commit -m "Added code to allow user to view and page through myDeck"
+  403  git push origin user-view-myDeck 
+  404  git status
+  405  git add index.html 
+  406  git add js/
+  407  git commit -m "Cleaned up code and styling"
+  408  git push origin user-view-myDeck 
+  409  git switch master
+  410  git pull origin master
+  411  git status
+  412  ping github
+  413  ping github.com
+  414  git add css/
+  415  git add index.html 
+  416  git add js/
+  417  git status
+  418  git commit -m "Added functionality to view a card from myDeck and click on links to buy or view more info"
+  419  git add js/
+  420  git status
+  421  git commit -m "Added functionality to view a card from myDeck and click on links to buy or view more info"
+  422  git add js/
+  423  git commit -m "Added functionality to view a card from myDeck and click on links to buy or view more info"
+  424  git reset --soft HEAD~1
+  425  git status
+  426  git restore --staged css/
+  427  git restore --staged index.html
+  428  git restore --staged js/
+  429  git status
+  430  git branch user-view-myCard
+  431  git switch user-view-my
+  432  git switch user-view-myCard 
+  433  git status
+  434  git add css/
+  435  git add index.html 
+  436  git add js/
+  437  git status
+  438  git commit -m "Added functionality to view a card from myDeck and click on links to buy or view more info"
+  439  git push origin user-view-myCard 
+  440  git status
+  441  git add css/
+  442  git add index.html 
+  443  git add js/
+  444  git status
+  445  git add images/133.png 
+  446  git commit -m "Added view for additional Pokemon info.  Fixed bugs, cleanup up styling."
+  447  git push origin user-view-myCard 
+  448  git switch master
+  449  git pull origin master
+  450  git branch user-delete-card
+  451  git switch user-delete-card
+  452  git status
+  453  git add index.html 
+  454  git add js/
+  455  git status
+  456  git commit -m "Added code to listen for click on the remove button.  Calls remove on the li element in myDeck and deletes it from data."
+  457  git push origin user-delete-card 
+  458  git switch master
+  459  git pull origin master
+  460  pwd
+  461  git restore index.html
+  462  git restore css/styles.css
+  463  pwpd
+  464  pwd
+  465  cd ..
+  466  git clone git@github.com:Learning-Fuze/lfz-portfolios.git
+  467  ls
+  468  git clone git@github.com:Learning-Fuze/lfz-portfolios.git
+  469  ls
+  470  cd lfz-portfolios/
+  471  ls
+  472  pwd
+  473  cd ..
+  474  ls
+  475  cd c0621-code-solutions/
+  476  ls
+  477  cd ..
+  478  ls
+  479  cd lfz-portfolios/
+  480  ls
+  481  cd resume/
+  482  ls
+  483  cd ase
+  484  cd assets/
+  485  ls
+  486  pwd
+  487  cd ../..
+  488  cd ..
+  489  cd c0621-code-solutions/
+  490  mv practice/ ..
+  491  cd ..
+  492  ls
+  493  cd practice/
+  494  ls
+  495  git init
+  496  git add README.md
+  497  ls
+  498  cd ..
+  499  ls
+  500  git checkout https://github.com/angeljubilee/practice-problems.git
+  501  pwd
+  502  git checkout https://github.com/angeljubilee/practice-problems.git
+  503  ls
+  504  rm -rf practice/
+  505  git clone git@github.com:angeljubilee/practice-problems.git
+  506  cd practice-problems/
+  507  cd ..
+  508  ls
+  509  cd pokeDojo/
+  510  git pull origin master
+  511  git pull origin paging
+  512  git branch paging
+  513  git switch paging
+  514  git pull origin paging
+  515  git status
+  516  git restore css/
+  517  git restore images/
+  518  git restore index.html
+  519  git restore js/
+  520  git status
+  521  git pull origin paging
+  522  cd ..
+  523  cd c0621-code-solutions/
+  524  ls
+  525  cd es6-const-let/
+  526  ls
+  527  git status
+  528  ls
+  529  git status
+  530  git pull origin master
+  531  cd ..
+  532  ls
+  533  git status
+  534  git branch es6-const-let
+  535  git switch es6-const-let 
+  536  git add es6-const-let/
+  537  git status
+  538  git commit -m "Completed es6-const-let"
+  539  git push origin es6-const-let 
+  540  git status
+  541  gi add es6-const-let/
+  542  git add es6-const-let/
+  543  git status
+  544  git commit -m "Moved variable declaration"
+  545  git push origin es6-const-let 
+  546  git status
+  547  pwd
+  548  git switch master
+  549  git pull origin master
+  550  git status
+  551  git switch es6-template-literals
+  552  git branch es6-template-literals
+  553  git switch es6-template-literals 
+  554  git status
+  555  git add es6-template-literals/
+  556  git status
+  557  git commit -m "Completed es6-template-literals"
+  558  git push origin es6-template-literals 
+  559  git status
+  560  cd ..
+  561  git status
+  562  pwd
+  563  cd c0621-code-solutions/
+  564  git status
+  565  git switch master
+  566  git pull origin master
+  567  git branch es6-destructuring
+  568  git switch es6-destructuring 
+  569  git status
+  570  git add es6-destructuring/
+  571  git status
+  572  git commit -m "Completed es6-destructuring"
+  573  git add es6-destructuring/
+  574  git commit -m "Completed es6-destructuring"
+  575  git push origin es6-destructuring 
+  576  git switch master
+  577  git pull origin master
+  578  git status
+  579  ping github
+  580  vi /etc/resolv.conf 
+  581  vim /etc/resolv.conf 
+  582  cat /etc/resolv.conf 
+  583  cp /etc/resolv.conf /etc/resolv.conf.bak
+  584  cd /etc/
+  585  ls -la
+  586  ping github
+  587  ping github.com
+  588  cd
+  589  pwd
+  590  cd repos/
+  591  ls
+  592  man man
+  593  man cat
+  594  cd c0621-code-solutions/
+  595  cd command-line-basics/
+  596  ls
+  597  cat laziness.txt impatience.txt  hubris.txt > three-virtues.txt
+  598  cat three-virtues.txt 
+  599  man ls
+  600  ls lfz-staff/
+  601  ls -aF lfz-staff/
+  602  man ls
+  603  ls -aF lfz-staff > lfz-staff/contents.txt
+  604  cat lfz-staff/contents.txt 
+  605  man pwd
+  606  pwd
+  607  pwd > i-was-here.txt
+  608  ls
+  609  cat i-was-here.txt 
+  610  man echo
+  611  echo 'Hello, World!' > hello.txt
+  612  cat hello.txt 
+  613  man touch
+  614  touch tag-youre-it.txt
+  615  touch snoot/boop.txt
+  616  ls snoot/boop.txt 
+  617  man mkdir
+  618  mkdir parent
+  619  ls
+  620  makrdir -p parent/child/grandchild
+  621  mkdir -p parent/child/grandchild
+  622  ls -a
+  623  ls -a parent//child/
+  624  touch parent/child/grandchild/.gitkeep
+  625  ls -a parent//child/
+  626  ls -a parent//child/grandchild/
+  627  mv pokiemans/ pokmon
+  628  ls
+  629  man rm
+  630  rm lol.txt
+  631  ls
+  632  rm -r kill-me/
+  633  ls
+  634  cp and-then.txt no-and-then.txt
+  635  ls
+  636  cat and-then.txt 
+  637  cat no-and-then.txt 
+  638  history
+  639  history > command-history.txt
