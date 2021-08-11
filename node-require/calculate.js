@@ -16,6 +16,9 @@ switch (process.argv[3]) {
     break;
   case 'over':
     f = divide;
+    break;
+  default:
+    f = add;
 }
 
 console.log('result: ', f(parseInt(process.argv[2]),
