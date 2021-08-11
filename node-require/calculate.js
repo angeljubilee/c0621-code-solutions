@@ -3,23 +3,13 @@ const subtract = require('./subtract');
 const multiply = require('./multiply');
 const divide = require('./divide');
 
-let f;
-switch (process.argv[3]) {
-  case 'plus':
-    f = add;
-    break;
-  case 'minus':
-    f = subtract;
-    break;
-  case 'times':
-    f = multiply;
-    break;
-  case 'over':
-    f = divide;
-    break;
-  default:
-    f = add;
-}
+const operations = {
+  plus: add,
+  minus: subtract,
+  times: multiply,
+  over: divide
+};
 
-console.log('result: ', f(parseInt(process.argv[2]),
+const op = operations[process.argv[3]];
+console.log('result: ', op(parseInt(process.argv[2]),
   parseInt(process.argv[4])));
