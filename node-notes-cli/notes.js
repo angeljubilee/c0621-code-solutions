@@ -1,7 +1,7 @@
 const data = require('./data.json');
 const fs = require('fs');
 
-let { nextId, notes } = data;
+const { nextId, notes } = data;
 
 function createNote(note) {
   if (!note) {
@@ -9,7 +9,7 @@ function createNote(note) {
     return;
   }
   data.notes[nextId] = note;
-  nextId++;
+  data.nextId++;
 
   fs.writeFile('./data.json', JSON.stringify(data, null, 2), err => {
     if (err) throw err;
