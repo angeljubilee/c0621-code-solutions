@@ -1,10 +1,10 @@
-const { readData, createNote, updateNote, deleteNote } = require('./notes');
+const { readNotes, createNote, updateNote, deleteNote } = require('./notes');
 
 const [, , cmd, ...args] = process.argv;
 
 switch (cmd) {
   case 'read':
-    readData();
+    readNotes();
     break;
   case 'create':
     createNote(args[0]);

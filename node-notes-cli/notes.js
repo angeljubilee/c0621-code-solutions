@@ -1,14 +1,12 @@
 const data = require('./data.json');
 const fs = require('fs');
 
-const { nextId, notes } = data;
-
 function createNote(note) {
   if (!note) {
     console.log('Please enter a note you would like to remember');
     return;
   }
-  data.notes[nextId] = note;
+  data.notes[data.nextId] = note;
   data.nextId++;
 
   fs.writeFile('./data.json', JSON.stringify(data, null, 2), err => {
@@ -16,9 +14,9 @@ function createNote(note) {
   });
 }
 
-function readData() {
-  for (const key in notes) {
-    console.log(`${key}: ${notes[key]}`);
+function readNotes() {
+  for (const key in data.notes) {
+    console.log(`${key}: ${data.notes[key]}`);
   }
 }
 
@@ -44,4 +42,4 @@ function deleteNote(id) {
   });
 }
 
-module.exports = { createNote, readData, updateNote, deleteNote };
+module.exports = { createNote, readNotes, updateNote, deleteNote };
