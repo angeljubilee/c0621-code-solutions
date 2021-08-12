@@ -6,6 +6,7 @@ let { nextId, notes } = data;
 function createNote(note) {
   if (!note) {
     console.log('Please enter a note you would like to remember');
+    return;
   }
   data.notes[nextId] = note;
   nextId++;
