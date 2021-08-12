@@ -4,6 +4,9 @@ const fs = require('fs');
 let { nextId, notes } = data;
 
 function createNote(note) {
+  if (!note) {
+    console.log('Please enter a note you would like to remember');
+  }
   data.notes[nextId] = note;
   nextId++;
 
@@ -19,14 +22,21 @@ function readData() {
 }
 
 function updateNote(id, note) {
+  if (!id || !note) {
+    console.log('Please enter a note id of the note you would like to update and a note');
+    return;
+  }
   data.notes[id] = note;
-  console.log('data: ', data);
   fs.writeFile('./data.json', JSON.stringify(data, null, 2), err => {
     if (err) throw err;
   });
 }
 
 function deleteNote(id) {
+  if (!id) {
+    console.log('Please enter a note id');
+    return;
+  }
   delete data.notes[id];
   fs.writeFile('./data.json', JSON.stringify(data, null, 2), err => {
     if (err) throw err;

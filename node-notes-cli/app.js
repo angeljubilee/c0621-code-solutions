@@ -14,4 +14,7 @@ switch (cmd) {
     break;
   case 'delete':
     deleteNote(args[0]);
+    break;
+  default:
+    console.log('Invalid command');
 }
