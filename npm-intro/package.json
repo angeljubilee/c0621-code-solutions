@@ -1,0 +1,14 @@
+{
+  "name": "npm-intro",
+  "version": "1.0.0",
+  "description": "testing app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Angel Lee",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
