@@ -6,7 +6,7 @@ let nextId = 1;
 const grades = {};
 
 app.get('/api/grades', (req, res) => {
-  var result = [];
+  const result = [];
   for (const key in grades) {
     result.push(grades[key]);
   }
