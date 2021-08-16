@@ -6,7 +6,11 @@ let nextId = 1;
 const grades = {};
 
 app.get('/api/grades', (req, res) => {
-  res.status(200).json(grades);
+  var result = [];
+  for (const key in grades) {
+    result.push(grades[key]);
+  }
+  res.status(200).json(result);
 });
 
 app.listen(3000, () => {
