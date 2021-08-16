@@ -14,7 +14,8 @@ app.get('/api/grades', (req, res) => {
 });
 
 app.listen(3000, () => {
-  // console.log('Server listening on port 3000');
+  // eslint-disable-next-line
+  console.log('Server listening on port 3000');
 });
 
 app.use(express.json());
