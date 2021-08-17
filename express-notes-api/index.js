@@ -36,14 +36,13 @@ app.use('/api/notes/:id', (req, res, next) => {
 
 app.get('/api/notes/:id', (req, res) => {
   const id = req.params.id;
-  const notesData = JSON.parse(data);
-  res.status(200).json(notesData.notes[id]);
+  res.status(200).json(data.notes[id]);
 });
 
 app.post('/api/notes', (req, res) => {
   const request = req.body;
 
-  if (JSON.stringify(request) === '{}') {
+  if (!request.content) {
     const error = {
       error: 'content is a required field'
     };
@@ -73,8 +72,7 @@ app.delete('/api/notes/:id', (req, res) => {
     delete data.notes[id];
     fs.writeFile('./data.json', JSON.stringify(data, null, 2), err => {
       if (err) {
-        // eslint-disable-next-line
-        console.err(err);
+        console.error(err);
         return;
       }
       res.sendStatus(204);
@@ -88,8 +86,7 @@ app.put('/api/notes/:id', (req, res) => {
   data.notes[id] = req.body;
   fs.writeFile('./data.json', JSON.stringify(data, null, 2), err => {
     if (err) {
-      // eslint-disable-next-line
-      console.err(err);
+      console.error(err);
       return;
     }
     res.status(200).json(data.notes[id]);
