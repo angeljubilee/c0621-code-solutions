@@ -61,7 +61,7 @@ app.post('/api/grades', (req, res) => {
     return;
   }
   const sql = `
-    insert into grades (
+    insert into "grades" (
       "name",
       "course",
       "score"
