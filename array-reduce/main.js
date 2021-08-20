@@ -29,10 +29,10 @@ const balance = account.reduce((acc, curr) => {
 }, 0);
 const composite = traits.reduce((acc, curr) => {
   for (const key in curr) {
-    acc += `${key}: ${curr[key]}, `;
+    acc[key] = curr[key];
   }
   return acc;
-}, '');
+}, {});
 
 console.log('sum: ', sum);
 console.log('product: ', product);
