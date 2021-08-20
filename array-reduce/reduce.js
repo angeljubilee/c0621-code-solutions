@@ -1,7 +1,7 @@
 function reduce(array, reducer, initialValue) {
   let result = initialValue;
   for (var i = 0; i < array.length; i++) {
-    result += reducer(array[i], initialValue);
+    result = reducer(array[i], result);
   }
   return result;
 }
