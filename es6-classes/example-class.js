@@ -1,7 +1,4 @@
-class ExampleClass {
-  // eslint-disable-next-line
-  constructor() {}
-}
+class ExampleClass {}
 
 const example = new ExampleClass();
 
