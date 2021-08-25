@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.switch {
+  border: 2px black solid;
+  background-color: green;
+  border-radius: 10px;
+  width: 40px;
+  height: 20px;
+}
+
+.on {
+  background-color: green;
+}
+
+.off {
+  background-color: lightgray;
+}
+
+.circle {
+  border: 2px black solid;
+  border-radius: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  padding: 1px;
+}
+
+.right {
+  position: relative;
+  left: 18px;
+}
