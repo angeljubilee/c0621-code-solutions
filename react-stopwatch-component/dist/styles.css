@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.stopwatch {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 4px;
+  margin: 0.5rem auto;
+}
