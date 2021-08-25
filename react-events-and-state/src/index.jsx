@@ -13,7 +13,6 @@ class CustomButton extends React.Component {
   }
 
   render() {
-    let button;
     if (this.state.isClicked) {
       return <button>World!</button>;
     }
