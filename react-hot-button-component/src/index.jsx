@@ -15,9 +15,8 @@ class HotButton extends React.Component {
   }
 
   render() {
-    let numClicks = this.state.numClicks;
+    const numClicks = this.state.numClicks;
     let color;
-    numClicks++;
     if (numClicks >= 3 && numClicks < 6) {
       color = 'purple';
     } else if (numClicks >= 6 && numClicks < 9) {
