@@ -21,9 +21,11 @@ class NewsLetterForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input id="email"
-               value={this.state.value}
-               onChange={this.handleChange} />
+        <label>Email
+          <input type="email"
+                value={this.state.value}
+                onChange={this.handleChange} />
+        </label>
         <button type="submit">
           Sign Up
         </button>
