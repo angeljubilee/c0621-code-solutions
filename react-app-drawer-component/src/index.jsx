@@ -27,7 +27,7 @@ class AppDrawer extends React.Component {
     if (this.state.showMenu) {
       return (
         <div className="gray-background" onClick={this.closeMenu}>
-          <Menu onClick={this.closeMenu} />
+          <Menu />
         </div>
       );
     }
