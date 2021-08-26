@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Menu from './menu';
 
 class AppDrawer extends React.Component {
   constructor(props) {
@@ -26,12 +27,7 @@ class AppDrawer extends React.Component {
     if (this.state.showMenu) {
       return (
         <div className="gray-background" onClick={this.closeMenu}>
-          <div className="menu">
-            <a href="#"><h2>Menu</h2></a>
-            <a href="#"><h4>About</h4></a>
-            <a href="#"><h4>Get Started</h4></a>
-            <a href="#"><h4>Sign In</h4></a>
-          </div>
+          <Menu onClick={this.closeMenu} />
         </div>
       );
     }
