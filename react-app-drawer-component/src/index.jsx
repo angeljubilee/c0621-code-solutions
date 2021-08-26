@@ -4,6 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Menu from './menu';
 
+function Header() {
+  return (
+    <section className="header">
+      <h1>Home</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime optio, quas adipisci veritatis natus tempora? Corrupti soluta incidunt sit ut corporis iusto odit alias, impedit minus est. Molestias, illo quam.</p>
+    </section>
+  );
+}
+
 class AppDrawer extends React.Component {
   constructor(props) {
     super(props);
@@ -26,15 +35,17 @@ class AppDrawer extends React.Component {
   render() {
     if (this.state.showMenu) {
       return (
-        <div className="gray-background" onClick={this.closeMenu}>
+        <div className="container gray-background" onClick={this.closeMenu}>
           <Menu />
+          <Header />
         </div>
       );
     }
     return (
-      <div>
-        <FontAwesomeIcon icon={faBars}
+      <div className="container">
+        <FontAwesomeIcon className="fixed" icon={faBars}
           onClick={this.openMenu} />
+        <Header />
       </div>
     );
   }
