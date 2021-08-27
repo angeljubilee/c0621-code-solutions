@@ -21,7 +21,6 @@ function Dot(props) {
 class Caurosel extends React.Component {
   constructor(props) {
     super(props);
-    this.images = this.props.images;
     this.state = { view: 0 };
     this.handleLeftClick = this.handleLeftClick.bind(this);
     this.handleRightClick = this.handleRightClick.bind(this);
@@ -31,11 +30,11 @@ class Caurosel extends React.Component {
   handleLeftClick(event) {
     this.state.view
       ? this.setState({ view: this.state.view - 1 })
-      : this.setState({ view: this.images.length - 1 });
+      : this.setState({ view: this.props.images.length - 1 });
   }
 
   handleRightClick(event) {
-    (this.state.view === this.images.length - 1)
+    (this.state.view === this.props.images.length - 1)
       ? this.setState({ view: 0 })
       : this.setState({ view: this.state.view + 1 });
 
@@ -55,17 +54,15 @@ class Caurosel extends React.Component {
           <h1>
             <i className="fas fa-chevron-left" onClick={this.handleLeftClick}></i>
           </h1>
-          <img src={this.images[this.state.view]}></img>
+          <img src={this.props.images[this.state.view]}></img>
           <h1>
             <i className="fas fa-chevron-right" onClick={this.handleRightClick}></i>
           </h1>
         </div>
         <div className="dots row flex-center" onClick={this.handleDotClick}>
-          <Dot index='0' active={this.state.view === 0} />
-          <Dot index='1' active={this.state.view === 1} />
-          <Dot index='2' active={this.state.view === 2} />
-          <Dot index='3' active={this.state.view === 3} />
-          <Dot index='4' active={this.state.view === 4} />
+          { this.props.images.map((img, index) =>
+              <Dot key={index} index={index} active={this.state.view === index} />
+          )}
         </div>
       </div>
     );
