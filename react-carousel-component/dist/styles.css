@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 60%;
+  padding: 10px 10%;
+}
+
+.fa-chevron-left,
+.fa-chevron-right, {
+  font-size: 50px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.dots i {
+  padding: 0.2rem;
+}
+
+.hidden {
+  display: none !important;
+}
