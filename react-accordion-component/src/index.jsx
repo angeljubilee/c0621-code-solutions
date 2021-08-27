@@ -20,7 +20,7 @@ class Accordian extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.state = { view: '', topics: this.props.topics };
+    this.state = { view: '' };
   }
 
   handleClick(event) {
@@ -32,7 +32,7 @@ class Accordian extends React.Component {
   }
 
   render() {
-    const sectionList = this.state.topics.map((section, index) =>
+    const sectionList = this.props.topics.map((section, index) =>
       <section key={index}>
         <h1>{section.title}</h1>
         { section.title === this.state.view
