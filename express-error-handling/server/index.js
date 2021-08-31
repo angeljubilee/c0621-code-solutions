@@ -50,12 +50,7 @@ app.post('/api/grades', (req, res, next) => {
       const [newGrade] = result.rows;
       res.status(201).json(newGrade);
     })
-    .catch(err => {
-      console.error(err);
-      res.status(500).json({
-        error: 'an unexpected error occurred'
-      });
-    });
+    .catch(err => next(err));
 });
 
 app.get('/api/grades/:gradeId', (req, res, next) => {
@@ -78,7 +73,7 @@ app.get('/api/grades/:gradeId', (req, res, next) => {
         res.json(grade);
       }
     })
-    .catch(err => (err));
+    .catch(err => next(err));
 });
 
 app.put('/api/grades/:gradeId', (req, res, next) => {
@@ -109,7 +104,7 @@ app.put('/api/grades/:gradeId', (req, res, next) => {
         res.json(updatedGrade);
       }
     })
-    .catch(err => (err));
+    .catch(err => next(err));
 });
 
 app.delete('/api/grades/:gradeId', (req, res, next) => {
@@ -132,7 +127,7 @@ app.delete('/api/grades/:gradeId', (req, res, next) => {
         res.sendStatus(204);
       }
     })
-    .catch(err => (err));
+    .catch(err => next(err));
 });
 
 app.use(errorMiddleware);
