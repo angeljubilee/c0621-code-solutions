@@ -7,7 +7,7 @@ the /api/auth/sign-up route.
 The server, which is listening on that route, will pick up the request,
 hash the password, and send a query to the db, inserting the new user.
 The db sends back the new userId, username, and createdAt.
-The server sends the user info back to the frontend in the 201 response.
+The server sends the user info back to the client in the 201 response.
 Upon receiving the response, React frontend updates the hash to the sign-in
  page.
 
@@ -20,16 +20,17 @@ The server picks up the request and sends a query to the db to select
 the user info from the users table.
 The server verifies the password against the hashed password from the db.
 If it's a match, the server makes a signed json web token and returns it
-the client.
-Auth-form.jsx calls the props onSignIn with arg result from the fetch.
-Auth.jsx got handleSignIn from AppContext and passed it to AuthForm.
+to the client.
+Auth-form.jsx calls the props onSignIn with the result from fetch.
+Auth.jsx gets handleSignIn from AppContext and passes it to AuthForm as
+a prop.
 HandleSignIn is defined in App.jsx and stores the token in local storage
 and updates the state with the new user.
 
 
 User can stay signed in (even if they refresh the page).
 When the User refreshes, App's ComponentDidMount runs, which includes code
-to pull the token out of local storage and updating the state with the user
+to grab the token from local storage, and update the state with the user
 returned from calling decodeToken.
 
 
