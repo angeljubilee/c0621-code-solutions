@@ -37,8 +37,8 @@ app.post('/api/uploads', uploadsMiddleware, (req, res, next) => {
   const params = [url, caption];
   db.query(sql, params)
     .then(result => {
-      if (!result.rows) {
-        throw new ClientError(500, 'Error processig');
+      if (!result.rows.length) {
+        throw new ClientError(500, 'Error processing');
       }
       const [img] = result.rows;
       res.status(201).json(img);
