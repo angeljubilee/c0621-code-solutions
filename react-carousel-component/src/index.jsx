@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
 const imgList = [
@@ -18,58 +18,51 @@ function Dot(props) {
   );
 }
 
-class Caurosel extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { view: 0 };
-    this.handleLeftClick = this.handleLeftClick.bind(this);
-    this.handleRightClick = this.handleRightClick.bind(this);
-    this.handleDotClick = this.handleDotClick.bind(this);
-  }
+function Carousel(props) {
 
-  handleLeftClick(event) {
-    this.state.view
-      ? this.setState({ view: this.state.view - 1 })
-      : this.setState({ view: this.props.images.length - 1 });
-  }
+  const [view, setView] = useState(0);
 
-  handleRightClick(event) {
-    (this.state.view === this.props.images.length - 1)
-      ? this.setState({ view: 0 })
-      : this.setState({ view: this.state.view + 1 });
+  const handleLeftClick = event => {
+    view
+      ? setView(view - 1)
+      : setView(props.images.length - 1);
+  };
 
-  }
+  const handleRightClick = event => {
+    (view === props.images.length - 1)
+      ? setView(0)
+      : setView(view + 1);
 
-  handleDotClick(event) {
+  };
+
+  const handleDotClick = event => {
     if (!event.target.matches('i')) {
       return;
     }
-    this.setState({ view: parseInt(event.target.getAttribute('data-view')) });
-  }
+    setView(parseInt(event.target.getAttribute('data-view')));
+  };
 
-  render() {
-    return (
-      <div className="container">
-        <div className="row flex-center">
-          <h1>
-            <i className="fas fa-chevron-left" onClick={this.handleLeftClick}></i>
-          </h1>
-          <img src={this.props.images[this.state.view]}></img>
-          <h1>
-            <i className="fas fa-chevron-right" onClick={this.handleRightClick}></i>
-          </h1>
-        </div>
-        <div className="dots row flex-center" onClick={this.handleDotClick}>
-          { this.props.images.map((img, index) =>
-              <Dot key={index} index={index} active={this.state.view === index} />
-          )}
-        </div>
+  return (
+    <div className="container">
+      <div className="row flex-center">
+        <h1>
+          <i className="fas fa-chevron-left" onClick={handleLeftClick}></i>
+        </h1>
+        <img src={props.images[view]}></img>
+        <h1>
+          <i className="fas fa-chevron-right" onClick={handleRightClick}></i>
+        </h1>
       </div>
-    );
-  }
+      <div className="dots row flex-center" onClick={handleDotClick}>
+        { props.images.map((img, index) =>
+            <Dot key={index} index={index} active={view === index} />
+        )}
+      </div>
+    </div>
+  );
 }
 
 ReactDOM.render(
-  <Caurosel images={imgList}/>,
+  <Carousel images={imgList}/>,
   document.querySelector('#root')
 );
