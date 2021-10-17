@@ -18,7 +18,7 @@ function Dot(props) {
   );
 }
 
-function Caurosel(props) {
+function Carousel(props) {
 
   const [view, setView] = useState(0);
 
@@ -63,6 +63,6 @@ function Caurosel(props) {
 }
 
 ReactDOM.render(
-  <Caurosel images={imgList}/>,
+  <Carousel images={imgList}/>,
   document.querySelector('#root')
 );
