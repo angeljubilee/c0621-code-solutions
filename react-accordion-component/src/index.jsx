@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
 const subjects = [
@@ -16,38 +16,33 @@ const subjects = [
   }
 ];
 
-class Accordian extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-    this.state = { view: '' };
-  }
+function Accordion(props) {
+  const [view, setView] = useState('');
 
-  handleClick(event) {
-    if (this.state.view === event.target.textContent) {
-      this.setState({ view: '' });
+  const handleClick = event => {
+    if (view === event.target.textContent) {
+      setView('');
     } else {
-      this.setState({ view: event.target.textContent });
+      setView(event.target.textContent);
     }
-  }
+  };
 
-  render() {
-    const sectionList = this.props.topics.map((section, index) =>
-      <section key={index}>
-        <h1>{section.title}</h1>
-        { section.title === this.state.view
-          ? <p>{section.content}</p>
-          : <p className="hidden">{section.content}</p>
-        }
-      </section>
-    );
-    return (
-     <div className="container" onClick={this.handleClick}>{sectionList}</div>
-    );
-  }
+  const sectionList = props.topics.map((section, index) =>
+    <section key={index}>
+      <h1>{section.title}</h1>
+      { section.title === view
+        ? <p>{section.content}</p>
+        : <p className="hidden">{section.content}</p>
+      }
+    </section>
+  );
+
+  return (
+    <div className="container" onClick={handleClick}>{sectionList}</div>
+  );
 }
 
 ReactDOM.render(
-  <Accordian topics={subjects} />,
+  <Accordion topics={subjects} />,
   document.querySelector('#root')
 );
